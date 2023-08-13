@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens flexiveis</title>
+</head>
+<body>
+   <h1>teste imagen flexivel</h1>
+   <p>mude o tamanho da tela</p>
+   <picture>
+     <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+     <source media="(max-width: 1050px)" srcset="imagens/imagem-g.png" type="image/png">
+     <img src="imagens/imagem-m.png" alt="imagem flexivel">
+   </picture>
+   <h1>adicionando audio</h1>
+   <audio preload="metadata" controls 
+     src="midia/Dizzy (Sting) - Max Surla_Media Right Productions.mp3">
+     <!-- formatos compativeis: mp3, waw, ogg -->
+   </audio>
+   <h1>adicionando audio usando source</h1>
+   <audio preload="metadata " controls>
+    <!-- vai carregar de cima pra baixo, caso o navegador nao carregue o mp3 ele carregara o ogg, e assim po diante -->
+      <source src="midia/Dizzy (Sting) - Max Surla_Media Right Productions.mp3" type="audio/mpeg">
+      <source src="midia/Dizzy (Sting) - Max Surla_Media Right Productions.ogg" type="audio/ogg">
+      <source src="midia/Dizzy (Sting) - Max Surla_Media Right Productions.waw" type="audio/waw">
+      <!-- caso nao carregue nenhum, a tag p aparecera -->
+      <p>seu navegador nao suporta audio <a href="https://www.youtube.com/watch?v=_kS7F4VpJa0"></a>aperte aqui para acessar o audio</p>
+   </audio> <br>
+   <video src="videos/pexels_videos_2689678 (2160p).mp4"></video>
+</body>
+</html>

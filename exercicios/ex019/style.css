@@ -1,0 +1,43 @@
+/* em HTML e id = em CSS e # (so pode um elemento)
+   em HTML e class = em CSS e . (pode varios elementos)
+*/
+
+body {
+    font: normal 1em arial;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#titulo {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+.basico {
+    color: rgb(50, 205, 50);
+}
+
+.intermediario {
+    color: rgb(205, 205, 50);
+}
+
+.avancado {
+    color: rgb(205, 50, 50);
+}
+
+.paragrafo {
+    text-align: justify;
+}
+
+.destaque {
+    background-color: #505050;
+}
