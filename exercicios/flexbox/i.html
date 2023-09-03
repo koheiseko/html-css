@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* * {
+            margin: 0%;
+            padding: 0%;
+        } */
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: center;
+            gap: 3rem 3rem;
+            flex-direction: row;
+        }
+
+        div {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .bloco1{
+            background-color: brown;
+            order: 3;
+        }
+
+        .bloco2 {
+            background-color: cadetblue;
+            order: 4;
+        }
+
+        .bloco3 {
+            background-color: chocolate;
+            order: 1;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="bloco1">
+           <h1>1</h1>
+        </div>
+        <div class="bloco2">
+           <h1>2</h1>
+        </div>
+        <div class="bloco3">
+           <h1>3</h1>
+        </div>
+    </main>
+</body>
+</html>
