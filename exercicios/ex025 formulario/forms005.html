@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios 5</title>
+    <style>
+        form {
+            display: inline-block;
+        }
+
+        .box {
+            padding: 10px;
+            background-color: darkslategrey;
+            border-radius: 15px;
+            color: #ffffff;
+        }
+
+        fieldset {
+            border: 3px solid gray;
+        } 
+        
+        p {
+            text-align: center;
+        }
+
+        .botao {
+            margin-right: 10px;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: gray;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formularios</h1>
+    <form action="post">
+        <div class="box">
+            <fieldset>
+                <legend>sexo:</legend>
+                <div>
+                    <input type="radio" name="sexo" id="masc">
+                    <label for="masc">masculino</label>
+                </div>
+                <div>
+                    <input type="radio" name="sexo" id="fem">
+                    <label for="fem">femino</label>
+                </div>
+                <div>
+                    <input type="radio" name="sexo" id="outro">
+                    <label for="outro">outro</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>esporte favorito</legend>
+                <p>
+                    <input type="checkbox" name="" id="ifut" checked>
+                    <label for="ifut">futebol</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="" id="ibas">
+                    <label for="ibas">basquete</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="" id="inat">
+                    <label for="inat">natacao</label>
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar" class="botao">
+                <input type="reset" value="Limpar" class="botao">
+            </p>
+        </div>
+    </form>
+</body>
+</html>

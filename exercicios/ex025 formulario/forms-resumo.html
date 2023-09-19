@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        fieldset {
+            border: 3px solid black;
+        }
+
+        legend {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resumo de formulario</h1> 
+    <form action="" method="get">
+        <fieldset>
+            <legend>formularios</legend>
+            <div>
+                <label for="itext">texto:</label>
+                <input type="text" name="text" id="itext">
+            </div>
+            <div>
+                <label for="inum">numero:</label>
+                <input type="number" name="num" id="inum">
+            </div>
+            <div>
+                <label for="itel">telefone:</label>
+                <input type="tel" name="tel" id="itel">
+            </div>
+            <div>
+                <label for="isen">senha:</label>
+                <input type="password" name="sen" id="isen">
+            </div>
+            <div>
+                <label for="icor">cor:</label>
+                <input type="color" name="cor" id="icor">
+            </div>
+            <div>
+                <label for="imes">mes:</label>
+                <input type="month" name="mes" id="imes">
+            </div>
+            <div>
+                <label for="idata">data:</label>
+                <input type="date" name="data" id="idata">
+            </div>
+            <div>
+                <label for="ifale">enviar arquivo:</label>
+                <input type="file" name="file" id="ifile">
+            </div>
+            <div>
+                <label for="iema">email:</label>
+                <input type="email" name="email" id="iema">
+            </div>
+            <div>
+                <label for="inivel">nivel:</label>
+                <input type="range" name="inivel" id="inivel">
+            </div>
+            <div>
+                escolha apenas uma opcao:
+                <div>
+                    <input type="radio" name="grupo" id="iradio1">
+                    <label for="iradio1">opcao 1</label>
+                    <input type="radio" name="grupo" id="iradio2">
+                    <label for="iradio">opcao 1</label>
+                    <input type="radio" name="grupo" id="iradio3">
+                    <label for="iradio3">opcao 1</label>
+                </div>
+            </div>
+            <div>
+                escolha multiplas opcoes:
+                <div>
+                    <input type="checkbox" name="" id="op1">
+                    <label for="op1">opcao 1</label>
+                    <input type="checkbox" name="" id="op2">
+                    <label for="op2">opcao 1</label>
+                    <input type="checkbox" name="" id="op3">
+                    <label for="op3">opcao 1</label>
+                    <input type="checkbox" name="" id="op4">
+                    <label for="op4">opcao 1</label>
+                    <input type="checkbox" name="" id="op5">
+                    <label for="op5">opcao 1</label>
+                </div>
+            </div>
+            <div>
+                <label for="isel">selecione:</label>
+                <select name="selecao" id="isel">
+                    <option value="">opcao 1</option>
+                    <option value="">opcao 2</option>
+                    <option value="">opcao 3</option>
+                    <option value="">opcao 4</option>
+                    <option value="">opcao 5</option>
+                    <optgroup label="grupo 2">
+                        <option value="">opcao 6</option>
+                        <option value="">opcao 7</option>
+                        <option value="">opcao 8</option>
+                        <option value="">opcao 9</option>
+                        <option value="">opcao 10</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="idtl">escreva ou selecione:</label>
+                <input type="text" name="texto" id="idtl" list="list"> 
+                <datalist id="list">
+                    <option value="1">opcao 1</option>
+                    <option value="2">opcao 2</option>
+                    <option value="3">opcao 3</option>
+                    <option value="4">opcao 4</option>
+                    <option value="5">opcao 5</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="itxt">escreva um texto:</label> <br>
+                <textarea name="txt" id="itxt" cols="30" rows="10"></textarea>
+           </div>
+           <div>
+                <label for="output">output:</label>
+                <output id="output"> 5</output>
+           </div>
+           <div>
+                <p>operacoes de soma:</p>
+                <div>
+                    <label for="inum1">numero 1:</label>
+                    <input type="number" name="num" id="inum1" min="0" max="50" oninput="ival.innerHTML = Number(inum1.value) + Number(inum2.value)">
+                </div>
+                <div>
+                    <label for="inum2">numero 2:</label>
+                    <input type="number" name="num" id="inum2" min="0" max="50" oninput="ival.innerHTML = Number(inum1.value) + Number(inum2.value)">
+                </div>
+                <p>
+                    o valor é:
+                    <output id="ival"></output>
+                </p>
+           </div>
+        </fieldset>
+    </form>
+</body>
+</html>
